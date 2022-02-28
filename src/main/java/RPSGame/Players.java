@@ -18,6 +18,9 @@ public class Players {
         System.out.println(askAnswer);
         this.userAnswer = answer.nextLine();
     }
+    public void setPcAnswer(){
+        this.pcAnswer = choices[random];
+    }
 
     public String getName() {
         return name;
@@ -26,4 +29,7 @@ public class Players {
         return userAnswer;
     }
 
+    public String getPcAnswer() {
+        return pcAnswer;
+    }
 }
